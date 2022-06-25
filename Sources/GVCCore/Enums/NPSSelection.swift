@@ -5,7 +5,7 @@
 //  Created by Zaid Neurothrone on 2022-06-23.
 //
 
-public enum NPSSelection: Int, CaseIterable {
+public enum NPSSelection: Int, CaseIterable, Identifiable {
     case twenty = 20
     case twentyFive = 25
     case thirtyTwo = 32
@@ -23,6 +23,8 @@ public enum NPSSelection: Int, CaseIterable {
     case threeHundred = 300
     case threeHundredAndFifty = 350
     case fourHundred = 400
+    
+    public var id: Self { self }
     
     public var toString: String {
         switch self {
