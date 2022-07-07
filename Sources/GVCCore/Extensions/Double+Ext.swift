@@ -8,7 +8,7 @@
 import Foundation
 
 extension Double {
-    func rounded(to places: Int) -> Double {
+    func rounded(to places: Int) async -> Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
     }
