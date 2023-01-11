@@ -1,3 +1,3 @@
 # GVC-Core
 
-A description of this package.
+A custom swift package that the GasVo mobile and web app use to share the same codebase.
